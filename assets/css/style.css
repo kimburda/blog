@@ -116,7 +116,7 @@ a:hover { text-decoration: underline; }
   font-size: 18px;
   font-weight: 500;
   color: var(--grey-mid);
-  max-width: 520px;
+  max-width: 100%;
 }
  
  
