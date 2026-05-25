@@ -143,6 +143,7 @@ a:hover { text-decoration: underline; }
   position: absolute;
   inset: 0;
   z-index: 1;
+  display: block;
 }
 
 .post-card a:not(.card-link) {
