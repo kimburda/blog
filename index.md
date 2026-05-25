@@ -1,10 +1,3 @@
-title: Kim Burda | Blog
-description: Blog
-baseurl: "/blog"
-url: "https://kimburda.github.io"
-theme: minima
-permalink: /:title/
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-sitemap
+---
+layout: home
+---
