@@ -8,7 +8,7 @@
   --grey-mid:   #4a5568;
   --grey-light: #718096;
   --grey-border:#e2e8f0;
-  --grey-bg:    #f7f8fa;
+  --grey-bg:    #eef0f3;
   --white:      #ffffff;
   --text:       #1c1f26;
   --accent:     #1a4f8a;
@@ -129,7 +129,9 @@ a:hover { text-decoration: underline; }
 .post-card {
   padding: 16px 0;
   border-bottom: 1px solid var(--grey-border);
+  cursor: pointer;
 }
+.post-card:hover .post-title a { color: var(--blue); }
  
 .post-card:last-child { border-bottom: none; }
  
