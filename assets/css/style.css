@@ -134,6 +134,21 @@ a:hover { text-decoration: underline; }
 .post-card:hover .post-title a { color: var(--blue); }
  
 .post-card:last-child { border-bottom: none; }
+
+.post-card {
+  position: relative;
+}
+
+.card-link {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.post-card a:not(.card-link) {
+  position: relative;
+  z-index: 2;
+}
  
 .post-meta {
   display: flex;
