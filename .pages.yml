@@ -4,7 +4,6 @@ content:
     label: Blog Posts
     path: _posts
     type: collection
-    filename: "{year}-{month}-{day}-{fields.title}"
     extension: md
     fields:
       - name: title
