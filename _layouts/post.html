@@ -1,1 +1,20 @@
-
+---
+layout: default
+---
+<div class="post-container">
+  <div class="post-header">
+    <div class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+      {% for tag in page.tags %}
+        <span class="tag">{{ tag }}</span>
+      {% endfor %}
+    </div>
+    <h1 class="post-title">{{ page.title }}</h1>
+  </div>
+  <div class="post-content">
+    {{ content }}
+  </div>
+  <div class="post-footer">
+    <a href="{{ '/' | relative_url }}" class="back-link">&larr; Back to all posts</a>
+  </div>
+</div>
