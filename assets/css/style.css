@@ -34,7 +34,7 @@ a:hover { text-decoration: underline; }
 /* ── Header ── */
 .site-header {
   border-bottom: 1px solid var(--grey-border);
-  background: var(--white);
+  background: #cce0f5;
   position: sticky;
   top: 0;
   z-index: 100;
