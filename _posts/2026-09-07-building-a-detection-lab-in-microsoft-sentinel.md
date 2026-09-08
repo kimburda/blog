@@ -19,9 +19,7 @@ I have the SC-200 certification, but wanted more hands-on experience with Micros
 
 ![image.png](/assets/uploads/image-3.png)
 
-![image.png](/assets/uploads/image-4.png)
 
-  
 3. I connected to the machine via RDP and I then enabled command line logging in process creation events.  
 
 ![image.png](/assets/uploads/image-5.png)
