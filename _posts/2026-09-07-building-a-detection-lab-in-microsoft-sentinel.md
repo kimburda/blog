@@ -5,7 +5,7 @@ tags: Cyber Sentinel Microsoft SOC SC-200 Lab
 ---
 ## Background
 
-**I have the SC-200 certification, but wanted more hands-on experience with Microsoft Sentinel specifically. So I built a small lab: simulate a real attack, detect it myself, and walk it through to a closed incident.**  
+**I have the SC-200 certification but I wanted more hands-on experience with Microsoft Sentinel specifically. I built a small lab where I simulate a real attack, detect it myself, and walk it through to a closed incident.**  
 
 ## **Set up**
 
@@ -43,11 +43,11 @@ SecurityEvent
 | order by TimeGenerated desc
 ```
 
-**The logic here: filter to process creation events (**`EventID == 4688`**) where the new process is PowerShell, then look for command lines containing one of PowerShell's encoded-command flags (**`-e`**,** `-enc`**, or** `-encodedcommand`**) followed by a long Base64-looking string. The** `(?i)` **makes the match case-insensitive, since attackers (and legitimate scripts) don't always use consistent casing on flags. I set the minimum length at 20 characters to avoid false positives on short, legitimate encoded strings while still catching realistic payloads.**
+**The aim was to filter to process creation events (**`EventID == 4688`**) where the new process is PowerShell, then look for command lines containing one of PowerShell's encoded-command flags (**`-e`**,** `-enc`**, or** `-encodedcommand`**) followed by a long Base64-looking string. The** `(?i)` **makes the match case-insensitive.**
 
 ![image.png](/blog/assets/uploads/image-8.png)
 
-2. **I then created a scheduled analytics rule using this same query, running on a regular interval against incoming logs. As part of building the rule, I configured entity mapping, mapping the `Computer` field to the Host entity and the `Account` field to the Account entity. This matters because entity mapping is what lets Sentinel automatically correlate this alert with other activity from the same host or account later, rather than treating every alert as an isolated event with no context.**
+2. **I then created a scheduled analytics rule using this same query, running on a regular 5 minute interval against incoming logs. As part of building the rule, I configured entity mapping, mapping the** `Computer` **field to the Host entity and the** `Account` **field to the Account entity. This matters because entity mapping is what lets Sentinel automatically correlate this alert with other activity from the same host or account later, rather than treating every alert as an isolated event with no context.**
 
 ![image.png](/blog/assets/uploads/image-14.png)
 
