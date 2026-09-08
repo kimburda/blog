@@ -41,7 +41,7 @@ I have the SC-200 certification, but wanted more hands-on experience with Micros
 ![image.png](/assets/uploads/image-8.png)
 
 2. I then created a scheduled analytics rule.
-  ![Screenshot 2026-09-07 152858.png](</assets/uploads/Screenshot 2026-09-07 152858-1.png>)
+![image.png](/assets/uploads/image-14.png)
 3. After a few minutes, an alert fired, and an incident was created.
 
 ![image.png](/assets/uploads/image-10.png)
