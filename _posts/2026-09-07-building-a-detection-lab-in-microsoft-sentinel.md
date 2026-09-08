@@ -3,11 +3,11 @@ title: Building a Detection Lab in Microsoft Sentinel
 date: 2026-09-07
 tags: Cyber Sentinel Microsoft SOC SC-200 Lab
 ---
-## Background -
+## Background
 
 **I have the SC-200 certification, but wanted more hands-on experience with Microsoft Sentinel specifically. So I built a small lab: simulate a real attack, detect it myself, and walk it through to a closed incident.**  
 
-## **Set up -**
+## **Set up**
 
 1. **I created a Log Analytics workspace and enabled Microsoft Sentinel on top of it.**
 
