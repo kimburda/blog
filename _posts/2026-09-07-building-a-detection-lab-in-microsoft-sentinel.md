@@ -18,7 +18,7 @@ I have the SC-200 certification, but wanted more hands-on experience with Micros
 2. I then created and connected a Windows VM to it using the Azure Monitor Agent, collecting security logs including full command-line details.
 
 ![image.png](/blog/assets/uploads/image-3.png)
-
+![image.png](/blog/assets/uploads/image-15.png)
 
 3. I connected to the machine via RDP and I then enabled command line logging in process creation events.  
 
